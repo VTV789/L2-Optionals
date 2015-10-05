@@ -47,6 +47,20 @@ class AnotherViewController: UIViewController {
     var anotherButton: UIButton?
 }
 
+//: Unwrapping Optionals with if let 
+var zee: Int?
+
+let strings = ["ABC", "123"]
+let randomIndex = Int(arc4random() % 2)
+let anotherString = strings[randomIndex]
+
+zee = Int(anotherString)
+
+if let intValue = zee {
+    intValue * 2
+} else {
+    "No value"
+}
 
 
 
