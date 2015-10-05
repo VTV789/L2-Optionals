@@ -64,6 +64,22 @@ if let intValue = zee {
 
 
 
+var vickee: Int?
+
+let stringing = ["ABCD", "1234"]
+let randomIndex1 = Int(arc4random() % 2)
+let anotherString1 = strings[randomIndex1]
+
+vickee = Int(anotherString)
+
+if let vickee = vickee {
+    vickee * 2
+} else {
+    "No value"
+}
+
+
+
 
 
 
