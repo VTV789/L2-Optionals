@@ -79,7 +79,17 @@ if let vickee = vickee {
 }
 
 
+//Example 2: Another example with UIImageView
 
+var imageView = UIImageView()
+
+imageView.image = UIImage(named:"puppy_in_box")
+if let image = imageView.image {
+    let size = image.size
+} else {
+    print("This image hasn't been set.")
+}
+imageView.image
 
 
 
