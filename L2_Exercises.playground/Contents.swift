@@ -58,6 +58,7 @@ if let tabBar = viewController.tabBarController?.tabBar {
 }
 
 
+5a) The variabl, arist, is an optional type. Its value cannot be used until it is unwrapped. Use if let to carefully unwrap the value returned by paintingDict[painting]. */
 
 
 
