@@ -30,9 +30,20 @@ class LoginViewController: UIViewController {
 
 
 /* Exercise 3
-The class UIViewController has a property called tabBarController. The tabBarController property is an optional of type UITabBarController?. The tabBarController itslef holds a tabBar as a property. Complete the code below by filling in the approprite use of optional chaining to access tab bar property. */
+The Swift Int type has an initializer that takes a string as a parameter and returns an optional of type Int?.
 
-var viewController = UIViewController()
+3a) Finish the code below by safely unwrapping the constant, number. */
+
+var numbericalString = "3"
+var number = Int(numbericalString)
+print("\(number) is the magic number.")
+
+// Solution 
+if let number = number {
+    print("\(number) is the magic number.")
+} else {
+    print("No mogic numbers here.")
+}
 
 
 
