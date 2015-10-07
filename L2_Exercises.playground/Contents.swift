@@ -45,8 +45,17 @@ if let number = number {
     print("No mogic numbers here.")
 }
 
+/* Exercise 4
+   The class UIViewController ahs a property called tabBarController. The tabBarController property is an optional of type UITabBarController?. The tabBarConroller itself holds a tabBar as a property. Complete the code below by filling in the appropriate use of optional chaining to access the tab bar property. */
 
+var viewController = UIViewController()
 
+//Solution
+if let tabBar = viewController.tabBarController?.tabBar {
+    print("Her's the tab bar.")
+} else {
+    print("No tab bar controller found.")
+}
 
 
 
