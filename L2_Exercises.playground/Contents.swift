@@ -57,8 +57,63 @@ if let tabBar = viewController.tabBarController?.tabBar {
     print("No tab bar controller found.")
 }
 
+/* Exercise 5
+   Below is a dictionary of painting and artists. 
 
 5a) The variabl, arist, is an optional type. Its value cannot be used until it is unwrapped. Use if let to carefully unwrap the value returned by paintingDict[painting]. */
+
+var paintingDict:Dictionary = ["Guernica":"Picasso", "Mona Lisa": "da Vinci", "No. 5": "Pollock"]
+var painting = "Mona Lisa"
+var artist = paintingDict[painting]
+
+//: 5b) Test your code by inserting different values for the variable painting. 
+//: Solution 
+if let artist = paintingDict[painting] {
+    print("No director found")
+}
+
+
+/* Exercise 6
+Set the width of the cancel button below. Notice that the cancelButton variable is declared as an implicitly unwrapped optional. */
+
+var anotherViewController = UIViewController()
+var cancelButton: UIBarButtonItem!
+cancelButton = UIBarButtonItem()
+// TODO: Set the width of the cancel button.
+
+//: Solution
+cancelButton.width = 50
+// Properties of implicitly unwrapped optionals are set like any old property, because implicitly unwrapped optionals unwrap automatically.
+
+/* The class UIViewController has a property called parentViewController. The parentViewController property is an optional of type UIViewController?. We can't always be sure that a given view controller has a parentViewController. Safely unwrap the parentViewController property below using if let. */
+
+var childViewController = UIViewController()
+// TODO: Safely unwrap childViewCOntroller.parentViewController
+
+// Solution
+if let parentVC = childViewController.parentViewController {
+    print("Here's the parentViewController")
+} else {
+    print("No parents, let's party")
+}
+
+/* Exercise 7
+The class UIViewController has a property called parentViewController. The parentViewController property is an optoional of type UIViewController?. We can't always be sure that a given view controller has a parentViewController. Safely unwrap the parentViewController property below using if let. */
+
+var ChildViewController = UIViewController()
+// TODO: Safely unwrap childViewController.parentViewController
+
+// Solution
+if let parentVC = ChildViewController.parentViewController {
+    print("Here's the parentViewController")
+} else {
+    print("No parents, let's party!")
+}
+
+
+
+
+
 
 
 
